@@ -1,0 +1,6 @@
+python -m venv Admission
+Admission\Scripts\activate 
+pip install pandas numpy scikit-learn statsmodels matplotlib seaborn
+pip list --format=freeze > requirements.txt  
+pip install -r requirements.txt 
+streamlit run .\main.py
